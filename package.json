@@ -1,0 +1,8 @@
+{
+  "name": "daydream-radio-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/alexander-lebed/daydream-radio-ui.git",
+  "author": "alexander-lebed <alexanderlebed999@gmail.com>",
+  "license": "MIT"
+}
