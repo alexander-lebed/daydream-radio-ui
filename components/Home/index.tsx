@@ -2,7 +2,7 @@ import {useContext} from "react";
 import { NextPage } from 'next'
 import {Mode} from "../../store";
 import {RADIO_MODE} from "../../constants";
-import ModeButton from "../../components/ModeButton";
+import ModeButton from "../ModeButton";
 import {Layout, Title, ModeButtonToolbar} from "./styles";
 
 const Home: NextPage = () => {
