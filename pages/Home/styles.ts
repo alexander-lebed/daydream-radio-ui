@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {getColors} from "../../helpers/modeStyle";
+import {deviceMediaQuery} from "../../constants";
 
 export const Layout = styled.div`
     position: relative;
@@ -13,18 +14,29 @@ export const Layout = styled.div`
 `;
 
 export const Title = styled.h1`
-    position: absolute;
-    top: 10%;
     font-family: 'Yeon Sung', cursive;
+    
+    @media ${deviceMediaQuery.laptop} {
+      position: absolute;
+      top: 10%;
+    }
 `;
 
 export const ModeButtonToolbar = styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     button {
-      margin: 0 40px;
+      margin: 0 0 30px 0;
+    }
+    
+    @media ${deviceMediaQuery.laptop} {
+      flex-direction: row;
+      button {
+        margin: 0 40px 0 0;
+      }
     }
 `;
