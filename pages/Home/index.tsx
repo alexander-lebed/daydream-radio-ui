@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     const {mode} = useContext(Mode.Context);
     return (
         <Layout mode={mode}>
-            <Title>Daydream Radio</Title>
+            <Title>~ Daydream Radio ~</Title>
             <ModeButtonToolbar>
                 <ModeButton mode={RADIO_MODE.NOW} />
                 <ModeButton mode={RADIO_MODE.MORNING} />

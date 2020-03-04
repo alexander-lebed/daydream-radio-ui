@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
         <Container>
             <Head>
                 <title>Daydream Radio</title>
-                <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet" />
             </Head>
             <GlobalStyle />
             <Store>

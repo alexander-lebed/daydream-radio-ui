@@ -7,13 +7,13 @@ export function getColors(mode: RadioMode): ModeColors {
     switch (mode) {
         case RADIO_MODE.NOW:
             return {
-                primaryColor: '#086D44',
+                primaryColor: '#035a22',
                 secondaryColor: '#249a39',
                 cssFilter: 'invert(26%) sepia(77%) saturate(897%) hue-rotate(117deg) brightness(98%) contrast(94%);'
             };
         case RADIO_MODE.MORNING:
             return {
-                primaryColor: '#ff4d00',
+                primaryColor: '#f04b03',
                 secondaryColor: '#fca245',
                 cssFilter: 'invert(39%) sepia(60%) saturate(4599%) hue-rotate(0deg) brightness(102%) contrast(106%);'
             };

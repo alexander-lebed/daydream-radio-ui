@@ -14,7 +14,7 @@ export const Layout = styled.div`
 `;
 
 export const Title = styled.h1`
-    font-family: 'Yeon Sung', cursive;
+    font-family: 'Fugaz One', cursive;
     
     @media ${deviceMediaQuery.laptop} {
       position: absolute;
