@@ -18,6 +18,7 @@ function MyApp({ Component, pageProps }) {
             <Head>
                 <title>Daydream Radio</title>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" />
+                <link rel="shortcut icon" type="image/x-icon" href="/icons/favicon.ico" />
                 <link rel="manifest" href="/manifest.json" />
                 {/* iOS support */}
                 <link rel="apple-touch-icon" href="/icons/icon-96x96.png" />
