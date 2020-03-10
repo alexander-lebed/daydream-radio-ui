@@ -1,5 +1,6 @@
 import {useContext} from "react";
-import { NextPage } from 'next'
+import { NextPage } from 'next';
+import Link from 'next/link'
 import {Mode} from "../../store";
 import {RADIO_MODE} from "../../constants";
 import ModeButton from "../ModeButton";
@@ -10,6 +11,15 @@ const Home: NextPage = () => {
     return (
         <Layout mode={mode}>
             <Title>~ Daydream Radio ~</Title>
+
+            <Link href="/about">
+                <a>ABOUT</a>
+            </Link>
+            <Link href="/fallback">
+                <a>FALLBACK PAGE</a>
+            </Link>
+
+            <h3>{process.env.NODE_ENV}</h3>
             <ModeButtonToolbar>
                 <ModeButton mode={RADIO_MODE.NOW} />
                 <ModeButton mode={RADIO_MODE.MORNING} />
