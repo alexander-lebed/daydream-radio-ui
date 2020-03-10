@@ -15,7 +15,7 @@ interface Props {
 
 const Provider = (props: Props) => {
     // todo: use cookie or check user time
-    const [mode, setMode] = useState<RadioMode>(RADIO_MODE.MORNING);
+    const [mode, setMode] = useState<RadioMode>(null);
     return (
         <Context.Provider value={{mode, setMode}}>
             {props.children}

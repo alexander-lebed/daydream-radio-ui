@@ -31,8 +31,8 @@ export function getColors(mode: RadioMode): ModeColors {
             };
         default:
             return {
-                primaryColor: '#000000',
-                secondaryColor: '#FFFFFF',
+                primaryColor: '#eab909', // #f8f8f8
+                secondaryColor: '#1f1f1f',
                 cssFilter: ''
             };
     }
