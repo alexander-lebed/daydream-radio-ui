@@ -13,13 +13,17 @@ export const Layout = styled.div`
     transition: 2s;
 `;
 
-export const Title = styled.h1`
-    font-family: 'Fugaz One', cursive;
+export const Text = styled.div`
+    text-align: center;
     
     @media ${deviceMediaQuery.laptop} {
       position: absolute;
       top: 10%;
     }
+`;
+
+export const Title = styled.h1`
+  font-family: 'Fugaz One', cursive;
 `;
 
 export const ModeButtonToolbar = styled.div`

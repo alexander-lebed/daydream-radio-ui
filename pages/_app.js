@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 import Store from '../store';
 
 const GlobalStyle = createGlobalStyle`

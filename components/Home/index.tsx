@@ -1,16 +1,22 @@
 import {useContext} from "react";
 import { NextPage } from 'next';
-import Link from 'next/link'
+import Link from 'next/link';
 import {Mode} from "../../store";
 import {RADIO_MODE} from "../../constants";
+import {useOnline} from '../../helpers/hooks';
+import OfflineWarning from "./OfflineWarning";
 import ModeButton from "../ModeButton";
-import {Layout, Title, ModeButtonToolbar} from "./styles";
+import {Layout, Text, Title, ModeButtonToolbar} from "./styles";
 
 const Home: NextPage = () => {
     const {mode} = useContext(Mode.Context);
+    const online = useOnline();
     return (
         <Layout mode={mode}>
-            <Title>~ Daydream Radio ~</Title>
+            <Text>
+                <Title>~ Daydream Radio ~</Title>
+                {!online && <OfflineWarning />}
+            </Text>
             {/* 
             <Link href="/about">
                 <a>ABOUT</a>
