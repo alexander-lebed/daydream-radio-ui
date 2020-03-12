@@ -10,11 +10,17 @@ interface Props {
 
 const ModeButton = (props: Props) => {
     const {mode: selectedMode, setMode} = useContext(Mode.Context);
+
+    const onClick = () => {
+        const mode = props.mode === selectedMode ? null : props.mode;
+        setMode(mode);
+    }
+    
     return (
         <Button
             mode={props.mode}
             selected={props.mode === selectedMode}
-            onClick={() => setMode(props.mode)}
+            onClick={onClick}
         >
             <Icon
                 mode={props.mode}

@@ -44,3 +44,8 @@ export const ModeButtonToolbar = styled.div`
       }
     }
 `;
+
+export const PlayerContainer = styled.div`
+    position: absolute;
+    bottom: 0;
+`;

@@ -1,12 +1,13 @@
 import {useContext} from "react";
 import { NextPage } from 'next';
-import Link from 'next/link';
 import {Mode} from "../../store";
 import {RADIO_MODE} from "../../constants";
 import {useOnline} from '../../helpers/hooks';
 import OfflineWarning from "./OfflineWarning";
 import ModeButton from "../ModeButton";
-import {Layout, Text, Title, ModeButtonToolbar} from "./styles";
+import Player from "../Player";
+import {Layout, Text, Title, ModeButtonToolbar, PlayerContainer} from "./styles";
+
 
 const Home: NextPage = () => {
     const {mode} = useContext(Mode.Context);
@@ -17,21 +18,17 @@ const Home: NextPage = () => {
                 <Title>~ Daydream Radio ~</Title>
                 {!online && <OfflineWarning />}
             </Text>
-            {/* 
-            <Link href="/about">
-                <a>ABOUT</a>
-            </Link>
-            <Link href="/fallback">
-                <a>FALLBACK PAGE</a>
-            </Link>
-            <h3>{process.env.NODE_ENV}</h3> 
-            */}
+            
             <ModeButtonToolbar>
                 <ModeButton mode={RADIO_MODE.NOW} />
                 <ModeButton mode={RADIO_MODE.MORNING} />
                 <ModeButton mode={RADIO_MODE.DAY} />
                 <ModeButton mode={RADIO_MODE.NIGHT} />
             </ModeButtonToolbar>
+
+            <PlayerContainer>
+                <Player />
+            </PlayerContainer>
         </Layout>
     )
 };
