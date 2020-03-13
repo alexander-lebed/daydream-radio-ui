@@ -3,9 +3,9 @@ import { NextPage } from 'next';
 import {Mode} from "../../store";
 import {RADIO_MODE} from "../../constants";
 import {useOnline} from '../../helpers/hooks';
-import OfflineWarning from "./OfflineWarning";
-import ModeButton from "../ModeButton";
-import Player from "../Player";
+import OfflineWarning from "../../components/OfflineWarning";
+import ModeButton from "../../components/ModeButton";
+import Player from "../../components/Player";
 import {Layout, Text, Title, ModeButtonToolbar, PlayerContainer} from "./styles";
 
 

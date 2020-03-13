@@ -1,3 +1,3 @@
-import Fallback from '../components/Fallback';
+import Fallback from '../layouts/Fallback';
 
 export default Fallback;
