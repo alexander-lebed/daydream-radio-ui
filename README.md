@@ -1,5 +1,5 @@
 ### TODO
-- 404 in space
+- preload page styles or put some spinner
 - custom service worker (player in backgrounf notification, fallback page)
 - play music in production
 - live stream
